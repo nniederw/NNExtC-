@@ -79,6 +79,14 @@ namespace NNExt
             }
             return list;
         }
+        public static T[] clone<T>(this T[] arr)
+        {
+            return (T[])arr.Clone();
+        }
+        public static T[,] clone<T>(this T[,] arr)
+        {
+            return (T[,])arr.Clone();
+        }
         public static List<T> ADD<T>(this List<T> list, T element)
         {
             list.Add(element);
